@@ -5,39 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Expenses chart component</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" type="text/css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="container vertical">
+    <div class="card header"> 
+      <div class="row">
+      <div class="col-md-6">
+        <p class="mb-2">My balance</p>
+        <p><strong>$921.48</strong></p>
+      </div> 
+      <div class="col-md-6 mt-1">
+      <img src="images/logo.svg">
+      </div>
+    </div>
+    </div>
+    <div class="card main-body">
+      <div class="card-title"> 
+        <p><strong>Spending - Last 7 days</strong></p>
+      </div>
+      <div class="card-body"></div>
+        mon
+        tue
+        wed
+        thu
+        fri
+        sat
+        sun
+      <hr>
+        <p class="mb-0">Total this month</p>
+        <div class="row">
+          <div class="col-md-6">
+        <h2 class="mt-1"><strong>$478.33</strong></h2>
+          </div>
+          <div class="col-md-6">
+            <p class="mb-0 float"><strong>+2.4%</strong></p>
+           <p class="float">from last month</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </main>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    
+  </script>
 </body>
 </html>

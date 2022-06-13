@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+.vertical{
+    /* min-height: 100%; align-items: center; */
+}
+
+.card{
+    width:22rem;
+    margin:auto;
+    padding:15px;
+}
+
+.header{
+    margin-bottom: 15px !important;
+    background-color: hsl(10, 79%, 65%);
+    color:white;
+    height:80px;
+}
+
+.col-md-6 img{
+    float: right;
+    width:60px;
+}
+
+.mb-2{
+    font-size: 12px;
+}
+
+.main-body{
+    background-color: hsl(33, 100%, 98%);
+}
+
+.float{
+    float: right;
+}
+
+
+
