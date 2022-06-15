@@ -18,7 +18,7 @@
     <div class="card header"> 
       <div class="row">
       <div class="col-md-6">
-        <p class="mb-2">My balance</p>
+        <p class="mb-2 balance">My balance</p>
         <p><strong>$921.48</strong></p>
       </div> 
       <div class="col-md-6 mt-1">
@@ -27,26 +27,29 @@
     </div>
     </div>
     <div class="card main-body">
-      <div class="card-title"> 
-        <p><strong>Spending - Last 7 days</strong></p>
+      <div class="card-body">
+      <div class="card-title mb-5"> 
+        <h4><strong>Spending - Last 7 days</strong></h4>
       </div>
-      <div class="card-body"></div>
-        mon
-        tue
-        wed
-        thu
-        fri
-        sat
-        sun
-      <hr>
+      <div id="day">
+        <div class="days me-1" id="mon"></div>
+        <div class="days mx-1" id="tue"></div>
+        <div class="days mx-1" id="wed"></div>
+        <div class="days mx-1" id="thu"></div>
+        <div class="days mx-1" id="fri"></div>
+        <div class="days mx-1" id="sat"></div>
+        <div class="days ms-1" id="sun"></div>
+      </div>
+      <hr class="my-3">
+      </div>
         <p class="mb-0">Total this month</p>
         <div class="row">
           <div class="col-md-6">
         <h2 class="mt-1"><strong>$478.33</strong></h2>
           </div>
           <div class="col-md-6">
-            <p class="mb-0 float"><strong>+2.4%</strong></p>
-           <p class="float">from last month</p>
+            <p class="mb-0 increment"><strong>+2.4%</strong></p>
+            <p class="increment">from last month</p>
          </div>
         </div>
       </div>

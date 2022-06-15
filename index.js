@@ -28,3 +28,30 @@ var obj = JSON.parse('[\
       "amount": 25.48\
     }\
   ]');
+  for($i=0;$i<7;$i++){
+    const ele=document.getElementById(obj[$i].day);
+    ele.style.width="30px";
+    ele.style.height=obj[$i].amount*2+"px";
+    ele.style.borderRadius="3px";
+    ele.style.display="inline-block";    
+
+    if(obj[$i].day!='wed')
+    ele.style.backgroundColor="hsl(10, 79%, 65%)";
+    else
+    ele.style.backgroundColor="hsl(186, 34%, 60%)";
+
+    const para = document.createElement("span");
+    const node = document.createTextNode(obj[$i].day);
+    para.appendChild(node);
+    para.style.position="absolute";
+    para.style.bottom="150px";
+    para.style.fontSize="10px";
+    para.style.width="30px";
+    para.style.display="inline-block";
+    para.style.marginLeft="1px";
+    para.style.textAlign="center";
+
+    const element = document.getElementById("day");
+    element.insertBefore(para,ele);
+
+  }

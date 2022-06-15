@@ -7,6 +7,9 @@ body{
     font-size: 18px;
 }
 
+.container{
+    width:24rem;
+}
 .vertical{
     position: absolute;
     top:50%;
@@ -32,7 +35,7 @@ body{
     width:60px;
 }
 
-.mb-2{
+.balance{
     font-size: 12px;
 }
 
@@ -40,9 +43,15 @@ body{
     background-color: hsl(33, 100%, 98%);
 }
 
-.float{
+hr{
+    position: relative;
+    top:20px;
+}
+
+.increment{
     float: right;
 }
+
 
 
 
