@@ -50,7 +50,29 @@ hr{
 
 .increment{
     float: right;
-}
+}  
+  /* Tooltip text */ 
+.tooltiptext {
+    border-bottom: 1px dotted black;
+    height:20px;
+    visibility: hidden;
+    width: 36px;
+    margin-left: -4px;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 12px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    margin-top: -35px !important;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.days:hover .tooltiptext {
+    visibility: visible;
+  }
 
 
 

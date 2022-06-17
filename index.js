@@ -28,6 +28,7 @@ var obj = JSON.parse('[\
       "amount": 25.48\
     }\
   ]');
+
   for($i=0;$i<7;$i++){
     const ele=document.getElementById(obj[$i].day);
     ele.style.width="30px";
@@ -53,5 +54,28 @@ var obj = JSON.parse('[\
 
     const element = document.getElementById("day");
     element.insertBefore(para,ele);
-
   }
+
+  function fun(id){
+    if(id.id!="wed")
+    id.style.backgroundColor="hsl(10, 79%, 80%)";
+    else
+    id.style.backgroundColor="hsl(186, 34%, 80%)";
+    id1=id.id;
+    var index = obj.map(function(e) { return e.day; }).indexOf(id1);
+    id.childNodes[0].innerHTML=obj[index].amount;
+    var t=obj[index].amount;
+
+    // id.childNodes[0].style.top=obj[index].amount+"px";
+  }
+
+  function fun1(id){
+    if(id.id!="wed")
+    id.style.backgroundColor="hsl(10, 79%, 60%)";
+    else
+    id.style.backgroundColor="hsl(186, 34%, 60%)";
+  }
+
+
+
+
