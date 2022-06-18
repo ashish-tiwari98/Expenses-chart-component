@@ -45,7 +45,7 @@ var obj = JSON.parse('[\
     const node = document.createTextNode(obj[$i].day);
     para.appendChild(node);
     para.style.position="absolute";
-    para.style.bottom="150px";
+    para.style.bottom="140px";
     para.style.fontSize="10px";
     para.style.width="30px";
     para.style.display="inline-block";
@@ -64,9 +64,6 @@ var obj = JSON.parse('[\
     id1=id.id;
     var index = obj.map(function(e) { return e.day; }).indexOf(id1);
     id.childNodes[0].innerHTML=obj[index].amount;
-    var t=obj[index].amount;
-
-    // id.childNodes[0].style.top=obj[index].amount+"px";
   }
 
   function fun1(id){
@@ -75,7 +72,3 @@ var obj = JSON.parse('[\
     else
     id.style.backgroundColor="hsl(186, 34%, 60%)";
   }
-
-
-
-

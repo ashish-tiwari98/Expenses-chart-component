@@ -5,10 +5,11 @@ body{
     background-color:hsl(27, 66%, 92%);
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    color:hsl(25, 47%, 15%);
 }
 
 .container{
-    width:24rem;
+    max-width:24rem;
 }
 .vertical{
     position: absolute;
@@ -19,19 +20,19 @@ body{
 
 .card{
     width:22rem;
-    margin:auto;
     padding:15px;
 }
 
 .header{
-    margin-bottom: 15px !important;
+    margin-bottom: 15px;
     background-color: hsl(10, 79%, 65%);
     color:white;
-    height:80px;
+    max-height:80px;
 }
 
-.col-md-6 img{
+.logo{
     float: right;
+    margin-top:6px;
     width:60px;
 }
 
@@ -42,6 +43,10 @@ body{
 .main-body{
     background-color: hsl(33, 100%, 98%);
 }
+.heading{
+    color:hsl(25, 47%, 15%);
+}
+
 
 hr{
     position: relative;
@@ -50,7 +55,13 @@ hr{
 
 .increment{
     float: right;
+    margin-top: -5px;
 }  
+
+.light{
+    color:hsl(28, 10%, 53%);
+}
+
   /* Tooltip text */ 
 .tooltiptext {
     border-bottom: 1px dotted black;
@@ -58,21 +69,21 @@ hr{
     visibility: hidden;
     width: 36px;
     margin-left: -4px;
-    background-color:black;
+    background-color:hsl(25, 47%, 15%);
     color: #fff;
     text-align: center;
     border-radius: 6px;
     font-size: 12px;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     margin-top: -35px !important;
     z-index: 1;
   }
   
-  /* Show the tooltip text when you mouse over the tooltip container */
 .days:hover .tooltiptext {
     visibility: visible;
   }
+
+  
 
 
 
